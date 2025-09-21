@@ -21,7 +21,7 @@ If there are any errors / features u want added contact me through discord: qzot
 
 ```yaml
 # Message sent when a player tries to interrupt a fight
-message: "⚔ You cannot interfere in an ongoing duel!"
+message: "⚔ You cannot interfere in an ongoing fight!"
 
 # Combat time (in seconds)
 # After the last hit, combat lasts this long before ending
