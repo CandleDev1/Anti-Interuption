@@ -1,0 +1,5 @@
+name: Anti-Interuption
+author: candle
+main: candle\Loader
+api: 5.0.0
+version: 1.0.0
