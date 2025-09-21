@@ -24,7 +24,6 @@ class EventListener implements Listener
             if (!$attacker instanceof Player) return;
             if ($player->getName() === $attacker->getName()) return;
 
-            // check attacker already in combat
             if (isset(Loader::getInstance()->inCombat[$attacker->getName()])) {
                 $opponent = Loader::getInstance()->inCombat[$attacker->getName()]["opponent"];
                 if ($opponent !== $player->getName() && Loader::getInstance()->inCombat[$attacker->getName()]["time"] > time()) {
@@ -34,7 +33,6 @@ class EventListener implements Listener
                 }
             }
 
-            // check victim already in combat
             if (isset(Loader::getInstance()->inCombat[$player->getName()])) {
                 $opponent = Loader::getInstance()->inCombat[$player->getName()]["opponent"];
                 if ($opponent !== $attacker->getName() && Loader::getInstance()->inCombat[$player->getName()]["time"] > time()) {
